@@ -1,0 +1,19 @@
+@import 'tailwindcss';
+
+
+:root {
+
+  --nav-medium-width: 244px;
+  --container-max-width: 960px;
+
+}
+
+.selected { 
+  @apply border-gray-800 border-t-1;
+}
+
+
+.maxWidth {
+  width: calc(100% - var(--nav-medium-width));
+  max-width: min(100%,var(--container-max-width,960px));
+}
